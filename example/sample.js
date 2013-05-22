@@ -1,3 +1,4 @@
+// sample start
 // this should be changed
 const a = 1;
 
@@ -10,3 +11,4 @@ const foo = function () {
   console.log('cannot change me');
   console.log('some const s should be left unchanged');
 };
+// sample end
