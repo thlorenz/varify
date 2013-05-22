@@ -12,7 +12,10 @@ that have no `const`.
 ## Warning
 
 The real `const` is block scoped, however when replaced with `var` this feature is lost. So only use varify if you can
-do without blockscope and are only looking for some immutability support that gets compiled out for compatibility.
+do without block scope and are only looking for some immutability support that gets compiled out for compatibility.
+
+If you are after block scope, have a look at [def.js](https://github.com/olov/defs) which provides
+[limited](https://github.com/olov/defs#loop-closures-limitation) support for that.
 
 ## Example
 
@@ -32,7 +35,7 @@ const foo = function () {
 Running browserify with varify transform:
 
 ```js
-require('browserify')
+require('browserify')()
   .transform(require('varify'))
   .add(__dirname + '/sample.js')
   .bundle()
