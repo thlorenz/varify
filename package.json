@@ -16,9 +16,16 @@
     "redeyed": "~0.4.2"
   },
   "devDependencies": {
-    "tap": "~0.4.3"
+    "tap": "~0.4.3",
+    "browserify": "~2.14.2"
   },
-  "keywords": ["const", "var", "es5", "refactor", "compatible"],
+  "keywords": [
+    "const",
+    "var",
+    "es5",
+    "refactor",
+    "compatible"
+  ],
   "author": {
     "name": "Thorsten Lorenz",
     "email": "thlorenz@gmx.de",
