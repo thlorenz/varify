@@ -9,6 +9,11 @@ browserify transform that converts all const assignments to var assignments.
 So you can get the benefits of immutable variables with help of lint tools while staying compatible with older browsers
 that have no `const`.
 
+## Warning
+
+The real `const` is block scoped, however when replaced with `var` this feature is lost. So only use varify if you can
+do without blockscope and are only looking for some immutability support that gets compiled out for compatibility.
+
 ## Example
 
 Given this JavaScript:
