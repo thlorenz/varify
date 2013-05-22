@@ -1,0 +1,31 @@
+{
+  "name": "varify",
+  "version": "0.0.0",
+  "description": "browserify transform that converts all const assignments to var assignments.",
+  "main": "varify.js",
+  "scripts": {
+    "test": "tap test/*.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thlorenz/varify.git"
+  },
+  "homepage": "https://github.com/thlorenz/varify",
+  "dependencies": {
+    "through": "~2.3.4",
+    "redeyed": "~0.4.2"
+  },
+  "devDependencies": {
+    "tap": "~0.4.3"
+  },
+  "keywords": ["const", "var", "es5", "refactor", "compatible"],
+  "author": {
+    "name": "Thorsten Lorenz",
+    "email": "thlorenz@gmx.de",
+    "url": "http://thlorenz.com"
+  },
+  "license": "MIT",
+  "engine": {
+    "node": ">=0.6"
+  }
+}
