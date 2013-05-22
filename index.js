@@ -6,9 +6,11 @@ var through = require('through')
 var config = {
   Keyword: { 
     const: function (tokenString, info) { 
-//      console.error('tokenString: ', tokenString);
-      
-      return 'var'; 
+      var idx       =  info.tokenIndex
+        , tokens    =  info.tokens
+        , nextToken =  tokens[idx + 1];
+
+      return nextToken && nextToken.type === 'Identifier' ? 'var' : tokenString;
     } 
   }
 };
