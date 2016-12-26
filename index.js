@@ -1,7 +1,8 @@
 'use strict';
 
 var through = require('through')
-  , redeyed = require('redeyed');
+  , redeyed = require('redeyed')
+  , path = require('path');
 
 var config = {
   Keyword: { 
@@ -28,5 +29,7 @@ module.exports = function (file) {
     }
     this.emit('end');
   }
-  return through(ondata, onend);
+  return (path.extname(file) === '.json')
+    ? through()
+    : through(ondata, onend);
 };
