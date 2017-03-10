@@ -12,8 +12,8 @@
   },
   "homepage": "https://github.com/thlorenz/varify",
   "dependencies": {
-    "through": "~2.3.4",
-    "redeyed": "~0.4.2"
+    "redeyed": "~1.0.1",
+    "through": "~2.3.4"
   },
   "devDependencies": {
     "tap": "~0.4.3",

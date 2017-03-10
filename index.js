@@ -21,6 +21,7 @@ module.exports = function (file) {
   function ondata (d) { data += d; }
   function onend() {
     try {
+      if (!/const\s/.test(data)) return this.queue(data);
       this.queue(redeyed(data, config).code);
     } catch (e) {
       console.error('unable to remove consts from ' + file);
